@@ -16,18 +16,24 @@ This is our tensorflow implementation of DReKGNN for drug repositioning.
 
 ## Usage
 
-Please set the mode parameter to "cv", and "analysis" in main.py to reproduce random splitting results, and drug splitting results reported in our paper, respectively.
+Please set the mode parameter to "cv", and "analysis" in main.py to reproduce 10-fold cross-validation results, and discovering candidates for new diseases results reported in our paper, respectively.
 
 
 
-
-A quick start example of random splitting is given by:
+A quick start example of 10-fold cross-validation is given by:
 
 ```shell
 $ python main.py --dataset Fdataset --mode cv
 ```
 
-An example of drug splitting is as follows:
+An example of discovering candidates for new diseases is as follows:
 ```shell
 $ python main.py --dataset Cdataset --mode analysis
+```
+
+If user wants to re-obtain the LLM node embedding:
+```shell
+$ python emb_generate.py --dataset Fdataset
+or 
+$ python emb_generate.py --dataset Cdataset
 ```
