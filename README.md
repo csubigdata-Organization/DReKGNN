@@ -31,7 +31,7 @@ An example of discovering candidates for new diseases is as follows:
 $ python main.py --dataset Cdataset --mode analysis
 ```
 
-If user wants to re-obtain the LLM node embedding:
+If user wants to re-obtain the LLM node embedding derived from expert knowledge:
 ```shell
 $ python emb_generate.py --dataset Fdataset
 or 
